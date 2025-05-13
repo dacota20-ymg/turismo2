@@ -1,0 +1,98 @@
+[
+  {
+    "pregunta": "hola",
+    "respuesta": "¡Hola! ¿En qué lugar turístico del Perú estás interesado?",
+    "imagen": "",
+    "mapa": ""
+  },
+  {
+    "pregunta": "ayuda",
+    "respuesta": "Puedo ayudarte a conocer los principales destinos turísticos del Perú. Pregúntame por ciudades o lugares como Cusco, Arequipa, Machu Picchu, Huacachina, Paracas, Puno, Cajamarca, entre otros.",
+    "imagen": "",
+    "mapa": ""
+  },
+  {
+    "pregunta": "cusco",
+    "respuesta": "Cusco es la antigua capital del Imperio Inca. Puedes visitar Machu Picchu, el Valle Sagrado, Sacsayhuamán y mucho más.",
+    "imagen": "img/cusco.jpg",
+    "mapa": "https://www.google.com/maps?q=cusco"
+  },
+  {
+    "pregunta": "machu picchu",
+    "respuesta": "Machu Picchu es una de las 7 maravillas del mundo moderno. Se encuentra en Cusco y es un lugar mágico e inolvidable.",
+    "imagen": "img/machu_picchu.jpg",
+    "mapa": "https://www.google.com/maps?q=machu+picchu"
+  },
+  {
+    "pregunta": "arequipa",
+    "respuesta": "Arequipa es conocida como la Ciudad Blanca. Visita el Cañón del Colca y el Monasterio de Santa Catalina.",
+    "imagen": "img/arequipa.jpg",
+    "mapa": "https://www.google.com/maps?q=arequipa"
+  },
+  {
+    "pregunta": "puno",
+    "respuesta": "Puno te ofrece el Lago Titicaca y las islas flotantes de los Uros. Un viaje cultural y natural inolvidable.",
+    "imagen": "img/puno.jpg",
+    "mapa": "https://www.google.com/maps?q=puno"
+  },
+  {
+    "pregunta": "ica",
+    "respuesta": "En Ica puedes disfrutar del oasis de Huacachina, hacer sandboard, y probar deliciosos piscos.",
+    "imagen": "img/ica.jpg",
+    "mapa": "https://www.google.com/maps?q=ica"
+  },
+  {
+    "pregunta": "huacachina",
+    "respuesta": "Huacachina es un oasis en el desierto ideal para aventuras como sandboard y paseos en buggy.",
+    "imagen": "img/huacachina.jpg",
+    "mapa": "https://www.google.com/maps?q=huacachina"
+  },
+  {
+    "pregunta": "paracas",
+    "respuesta": "Paracas ofrece playas hermosas, la Reserva Nacional y las Islas Ballestas, hogar de lobos marinos y aves.",
+    "imagen": "img/paracas.jpg",
+    "mapa": "https://www.google.com/maps?q=paracas"
+  },
+  {
+    "pregunta": "nazca",
+    "respuesta": "Nazca es conocida por sus líneas misteriosas que solo se aprecian desde el cielo. ¡Una experiencia única!",
+    "imagen": "img/nazca.jpg",
+    "mapa": "https://www.google.com/maps?q=nazca"
+  },
+  {
+    "pregunta": "cajamarca",
+    "respuesta": "Cajamarca es historia viva: Baños del Inca, Ventanillas de Otuzco y el lugar donde capturaron a Atahualpa.",
+    "imagen": "img/cajamarca.jpg",
+    "mapa": "https://www.google.com/maps?q=cajamarca"
+  },
+  {
+    "pregunta": "trujillo",
+    "respuesta": "Trujillo es la ciudad de la marinera y Chan Chan. También puedes disfrutar de las playas de Huanchaco.",
+    "imagen": "img/trujillo.jpg",
+    "mapa": "https://www.google.com/maps?q=trujillo"
+  },
+  {
+    "pregunta": "chiclayo",
+    "respuesta": "Chiclayo es famosa por el Señor de Sipán y su historia mochica. ¡Un destino arqueológico fascinante!",
+    "imagen": "img/chiclayo.jpg",
+    "mapa": "https://www.google.com/maps?q=chiclayo"
+  },
+  {
+    "pregunta": "lima",
+    "respuesta": "Lima es la capital del Perú. Tiene historia, cultura y gastronomía de primer nivel. Visita Miraflores y Barranco.",
+    "imagen": "img/lima.jpg",
+    "mapa": "https://www.google.com/maps?q=lima"
+  },
+  {
+    "pregunta": "gracias",
+    "respuesta": "¡De nada! Si tienes otra duda turística, estoy para ayudarte.",
+    "imagen": "",
+    "mapa": ""
+  },
+  {
+    "pregunta": "adios",
+    "respuesta": "¡Hasta luego! Espero que tengas un gran viaje por el Perú. 🇵🇪",
+    "imagen": "",
+    "mapa": ""
+  }
+]

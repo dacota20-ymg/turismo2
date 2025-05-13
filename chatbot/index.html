@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Peru Safe Travel - Agencia de Turismo en Cusco</title>
+  <link rel="icon" href="img/LOGO_FONDO_BLANCO-removebg-preview.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- TailwindCSS CDN para estilos rápidos -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Íconos de Lucide (opcional) -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <link rel="stylesheet" href="chatbot.css">
+</head>
+<body class="bg-gradient-to-b from-sky-50 to-blue-100 text-gray-800">
+
+  <!-- HEADER -->
+ 
+     <!-- NAV DESKTOP MEJORADO ESTILO CUSCOPERU.COM -->
+<header class="bg-white shadow-md sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+    <!-- Logo -->
+    <div class="text-xl font-bold text-blue-900">
+      <a href="#">Peru Safe Travel</a>
+      
+    </div>
+
+    <!-- Menú de Navegación -->
+    <nav class="hidden md:flex gap-6 text-sm font-medium text-gray-700">
+      <div class="group relative">
+        <button class="hover:text-blue-600">Machu Picchu Tours</button>
+        <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg p-4 rounded-md w-60">
+          <a href="#" class="block hover:text-blue-600 py-1">Tour Clásico</a>
+          <a href="#" class="block hover:text-blue-600 py-1">Camino Inca</a>
+          <a href="#" class="block hover:text-blue-600 py-1">Montaña Machu Picchu</a>
+        </div>
+      </div>
+
+      <div class="group relative">
+        <button class="hover:text-blue-600">Cusco Tours</button>
+        <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg p-4 rounded-md w-60">
+          <a href="#" class="block hover:text-blue-600 py-1">City Tour</a>
+          <a href="#" class="block hover:text-blue-600 py-1">Valle Sagrado</a>
+          <a href="#" class="block hover:text-blue-600 py-1">Maras - Moray</a>
+        </div>
+      </div>
+
+      <div class="group relative">
+        <button class="hover:text-blue-600">Conocer Perú</button>
+        <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 hidden group-hover:flex bg-white shadow-lg p-6 rounded-md w-[1000px] gap-8 z-50">
+
+          <!-- CUSCO -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Cusco</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Centros Arqueológicos</li>
+              <li>Atractivos Naturales</li>
+              <li>Iglesias y Conventos</li>
+              <li>Museos</li>
+              <li>Casas Coloniales</li>
+              <li>Palacios Inca</li>
+            </ul>
+          </div>
+      
+          <!-- AREQUIPA -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Arequipa</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Plazas y Parques</li>
+              <li>Templos</li>
+              <li>Museos</li>
+              <li>Casas Coloniales</li>
+              <li>Atractivos Naturales</li>
+            </ul>
+          </div>
+      
+          <!-- VALLE SAGRADO -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Valle Sagrado</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Centros Arqueológicos</li>
+              <li>Pueblos Tradicionales</li>
+            </ul>
+      
+            <h4 class="text-blue-900 font-semibold mt-4 mb-2">Camino Inca</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Centros Arqueológicos</li>
+              <li>Red de Caminos Inca</li>
+            </ul>
+          </div>
+      
+          <!-- MACHU PICCHU -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Machu Picchu</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Ciudadela de Machu Picchu</li>
+              <li>Nuevos Circuitos</li>
+              <li>Biodiversidad</li>
+              <li>Museo de Sitio</li>
+              <li>Montaña Huayna Picchu</li>
+              <li>Montaña Machu Picchu</li>
+              <li>Machupicchu vs Huayna Picchu</li>
+            </ul>
+          </div>
+      
+          <!-- LIMA + PUNO -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Lima</h4>
+            <ul class="text-gray-700 text-sm text-sm space-y-1">
+              <li>Plazas y Parques</li>
+              <li>Templos y Santuarios</li>
+              <li>Palacios y Casonas</li>
+              <li>Museos</li>
+              <li>Centros Arqueológicos</li>
+            </ul>
+      
+            <h4 class="text-blue-900 font-semibold mt-4 mb-2">Puno</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Plazas y Parques</li>
+              <li>Templos</li>
+              <li>Museos</li>
+              <li>Centros Arqueológicos</li>
+              <li>Pueblos Tradicionales</li>
+              <li>Reserva Nacional Titicaca</li>
+            </ul>
+          </div>
+      
+          <!-- ICA / VALLE SUR -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Ica - Nazca - Paracas</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Plazas y Parques</li>
+              <li>Templos y Santuarios</li>
+              <li>Museos</li>
+              <li>Centros Arqueológicos</li>
+              <li>Atractivos Naturales</li>
+            </ul>
+      
+            <h4 class="text-blue-900 font-semibold mt-4 mb-2">Valle Sur</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Centros Arqueológicos</li>
+              <li>Pueblos Tradicionales</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+
+      <div class="group relative">
+        <button class="hover:text-blue-600">Vacaciones Perú</button>
+        <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg p-4 rounded-md w-60">
+          <a href="#" class="block hover:text-blue-600 py-1">Lima y Paracas</a>
+          <a href="#" class="block hover:text-blue-600 py-1">Arequipa y Colca</a>
+          <a href="#" class="block hover:text-blue-600 py-1">Selva Amazónica</a>
+        </div>
+      </div>
+
+      <div class="group relative">
+        <button class="hover:text-blue-600">Qué Hacer</button>
+        <div class="absolute left-1/2 transform -translate-x-1/2 mt-2 hidden group-hover:flex bg-white shadow-lg p-6 rounded-md w-[1000px] gap-8 z-50">
+
+          <!-- CULTURA Y TRADICIÓN -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Cultura y Tradición</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Tours Culturales - 1/2 día</li>
+              <li>Tours Culturales - 1 día</li>
+              <li>Tours Culturales - Varios días</li>
+            </ul>
+      
+            <h4 class="text-blue-900 font-semibold mt-4 mb-2">Gastronomía Peruana</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Rinconcitos Cusqueños</li>
+            </ul>
+          </div>
+      
+          <!-- DEPORTES ACUÁTICOS -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Deportes Acuáticos</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Rafting Tours</li>
+              <li>Kayak Tours</li>
+            </ul>
+      
+            <h4 class="text-blue-900 font-semibold mt-4 mb-2">Tours en la Selva</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Tours en la Selva de Perú</li>
+            </ul>
+          </div>
+      
+          <!-- EXCURSIÓN Y CAMINATAS -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Excursión y Caminatas</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Camino Inca Machu Picchu</li>
+              <li>Caminos Inca Alternos</li>
+              <li>Trekking</li>
+            </ul>
+      
+            <h4 class="text-blue-900 font-semibold mt-4 mb-2">Deportes Extremos</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Deportes Extremos</li>
+            </ul>
+          </div>
+      
+          <!-- TOURS A CABALLO Y MOTORIZADOS -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Tours a Caballo</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Paseos a Caballo - 1/2 día</li>
+              <li>Paseos a Caballo - 1 día</li>
+            </ul>
+      
+            <h4 class="text-blue-900 font-semibold mt-4 mb-2">Tours Motorizados</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Tours en Moto</li>
+              <li>ATV Tours</li>
+            </ul>
+          </div>
+      
+          <!-- BICICLETA Y DESTACADOS -->
+          <div>
+            <h4 class="text-blue-900 font-semibold mb-2">Tours en Bicicleta Perú</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Tours en Bicicleta Cusco</li>
+            </ul>
+      
+            <h4 class="text-blue-900 font-semibold mt-4 mb-2">Actividades Destacadas</h4>
+            <ul class="text-gray-700 text-sm space-y-1">
+              <li>Excursiones en Bicicleta por Cusco</li>
+              <li>Cuatrimotos en tour Maras Moray</li>
+              <li>Navega por Cusco en ATV</li>
+            </ul>
+          </div>
+      
+        </div>
+      </div>
+      
+
+      <div class="group relative">
+        <button class="hover:text-blue-600">Info Útil</button>
+        <div class="absolute left-0 mt-2 hidden group-hover:block bg-white shadow-lg p-4 rounded-md w-60">
+          <a href="#" class="block hover:text-blue-600 py-1">Clima y Ropa</a>
+          <a href="#" class="block hover:text-blue-600 py-1">Consejos del Viajero</a>
+          <a href="#" class="block hover:text-blue-600 py-1">Fiestas y Eventos</a>
+        </div>
+      </div>
+
+      <a href="#contacto" class="hover:text-blue-600">Contacto</a>
+    </nav>
+
+    <!-- Redes Sociales -->
+    <div class="hidden md:flex gap-3 text-blue-600 text-lg">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </div>
+</header>
+
+      <!-- NAV MOBILE -->
+      <button id="menuToggle" class="md:hidden">
+        <i data-lucide="menu" class="w-6 h-6 text-gray-700"></i>
+      </button>
+    </div>
+
+  </header>
+
+  <!-- MAIN -->
+  <main class="max-w-8xl mx-auto px-6 py-10">
+    <!-- Sección institucional -->
+    <section id="empresa" class="relative w-full h-[600px] overflow-hidden rounded-xl shadow-lg">
+      <!-- Carrusel de fondo -->
+      <div class="absolute inset-0 z-0">
+        <div class="carousel w-full h-full relative">
+          <img src="img/fondo1.jpg" class="carousel-img absolute w-full h-full object-cover opacity-100 transition-opacity duration-1000" />
+          <img src="img/fondo2.jpg" class="carousel-img absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+          <img src="img/fondo3.jpg" class="carousel-img absolute w-full h-full object-cover opacity-0 transition-opacity duration-1000" />
+        </div>
+        <div class="absolute inset-0 bg-black bg-opacity-40 z-10"></div>
+      </div>
+    
+      <!-- Contenido centrado -->
+      <div class="relative z-20 flex flex-col justify-center items-center h-full text-white text-center px-6">
+        <h2 class="text-4xl font-bold mb-4 drop-shadow-lg">¿Quiénes Somos?</h2>
+        <p class="max-w-3xl text-lg drop-shadow-md leading-relaxed">
+          <strong>Peru Safe Travel</strong> es una agencia de turismo ubicada en el corazón de Cusco. Ofrecemos experiencias auténticas, seguras y memorables para quienes desean descubrir la riqueza cultural y natural del Perú. Nuestro equipo está comprometido con brindar un servicio de calidad y personalizado.
+        </p>
+      </div>
+    </section>
+     <meta charset="UTF-8">
+  <title>City Tour en Cusco - Peru Safe Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .tour-header {
+      font-weight: bold;
+      color: #0056b3;
+    }
+    .side-form {
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      background-color: white;
+    }
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      border-radius: 20px;
+      padding: 10px 20px;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+    .whatsapp-btn:hover {
+      background-color: #1DA851;
+      color: white;
+    }
+    .gallery-thumbs img {
+      height: 80px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .gallery-main img {
+      width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-4">
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item"><a href="#">Home</a></li>
+      <li class="breadcrumb-item"><a href="#">Tours a Perú</a></li>
+      <li class="breadcrumb-item"><a href="#">Tours en Cusco</a></li>
+      <li class="breadcrumb-item active" aria-current="page">City tour en Cusco económico 5 horas</li>
+    </ol>
+  </nav>
+
+  <!-- Botón volver y WhatsApp -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+    <a class="btn btn-warning text-white fw-bold" href="#">↩ REGRESAR AL MENÚ</a>
+    <a class="whatsapp-btn" href="https://wa.me/51999999999" target="_blank">
+      💬 CHATTA CON UN ASESOR
+    </a>
+  </div>
+
+  <!-- Tabs -->
+  <ul class="nav nav-tabs mb-4">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Descripción Corta</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Itinerario Completo</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Precio</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Mapa Tour</a>
+    </li>
+  </ul>
+
+  <!-- Contenido principal -->
+  <div class="row">
+    <div class="col-lg-8">
+      <h2 class="tour-header">GALERÍA DEL CITY TOUR ECONÓMICO EN CUSCO</h2>
+
+      <!-- Galería principal -->
+      <div class="gallery-main my-3">
+        <img src="https://yourdomain.com/sacsayhuaman.jpg" alt="Sacsayhuamán">
+        <p class="text-muted mt-2">Sacsayhuamán, templo ceremonial de culto al sol</p>
+      </div>
+
+      <!-- Miniaturas -->
+      <div class="d-flex gallery-thumbs">
+        <img src="https://yourdomain.com/thumb1.jpg" alt="Thumb1">
+        <img src="https://yourdomain.com/thumb2.jpg" alt="Thumb2">
+        <img src="https://yourdomain.com/thumb3.jpg" alt="Thumb3">
+        <img src="https://yourdomain.com/thumb4.jpg" alt="Thumb4">
+      </div>
+    </div>
+
+    <!-- Formulario lateral -->
+    <div class="col-lg-4">
+      <div class="side-form">
+        <p class="text-muted">Desde:</p>
+        <h3 class="text-primary fw-bold">65 USD</h3>
+        <p class="text-warning">¿Tienes dudas?</p>
+        <h5 class="text-warning fw-bold">Escríbenos</h5>
+
+        <form>
+          <input type="text" class="form-control my-2" placeholder="Nombre y Apellidos">
+          <input type="date" class="form-control my-2" placeholder="Fecha de llegada">
+          <input type="tel" class="form-control my-2" placeholder="📱 Número de móvil">
+          <input type="number" class="form-control my-2" placeholder="Número de pasajeros">
+          <input type="email" class="form-control my-2" placeholder="correo electrónico">
+          <textarea class="form-control my-2" rows="3" placeholder="Mensaje"></textarea>
+          <button type="submit" class="btn btn-warning w-100 mt-2 fw-bold text-white">Enviar mensaje</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    
+    
+    
+    
+    <!-- Script para rotar imágenes automáticamente -->
+    <script>
+      const images = document.querySelectorAll('.carousel img');
+      let current = 0;
+    
+      setInterval(() => {
+        images[current].classList.remove('opacity-60');
+        images[current].classList.add('opacity-0');
+    
+        current = (current + 1) % images.length;
+    
+        images[current].classList.remove('opacity-0');
+        images[current].classList.add('opacity-60');
+      }, 4000);
+    </script>
+
+    <section id="paquetes" class="mb-16 bg-white shadow rounded-xl p-6">
+      <h2 class="text-3xl font-bold text-center text-blue-800 mb-10">Nuestros Paquetes Turísticos</h2>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <!-- Paquete 1 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/machupicchu.png" 
+           alt="Machu Picchu" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-2">Machu Picchu Mágico 4D/3N</h3>
+            <p class="text-gray-600 mb-4">Incluye tren, guía bilingüe, entradas y hospedaje.</p>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Ver más</button>
+          </div>
+        </div>
+        
+        <!-- Paquete 2 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/Valle Sagrado.png" 
+           alt="Valle Sagrado" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-2">Valle Sagrado + Comunidades 3D/2N</h3>
+            <p class="text-gray-600 mb-4">Vive la cultura local en Pisac, Ollantaytambo y más.</p>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Ver más</button>
+          </div>
+        </div>
+        
+        <!-- Paquete 3 -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/Sacsayhuamán.png" 
+          alt="Cusco Ciudad" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-2">Tour Cusco Ciudad 1 Día</h3>
+            <p class="text-gray-600 mb-4">Visita Sacsayhuamán, Qorikancha, Catedral, etc.</p>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition">Ver más</button>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+
+    <section id="turismo-extremo" class="mb-16 bg-white shadow rounded-xl p-6">
+      <h2 class="text-3xl font-bold text-center text-red-700 mb-10">Turismo Extremo y Experiencias Únicas</h2>
+      <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+        Vive emociones intensas y conecta con la cultura ancestral a través de nuestras experiencias de turismo en el Perú.
+      </p>
+    
+      <div class="grid md:grid-cols-3 gap-6">
+    
+        <!-- Turismo de Aventura -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/aventura.png" alt="Turismo de Aventura" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-red-700 mb-2">Turismo de Aventura</h3>
+            <p class="text-gray-600">Desciende por ríos caudalosos, explora montañas o lánzate en tirolesa. Ideal para los amantes de la adrenalina.</p>
+          </div>
+        </div>
+    
+        <!-- Turismo Mítico -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/mitico.png" alt="Turismo Mítico" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-red-700 mb-2">Turismo Mítico</h3>
+            <p class="text-gray-600">Sumérgete en las leyendas andinas, rituales ancestrales y sitios energéticos como el Valle Sagrado o el Lago Titicaca.</p>
+          </div>
+        </div>
+    
+        <!-- Turismo Vivencial -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/vivencial.png" alt="Turismo Vivencial" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-red-700 mb-2">Turismo Vivencial</h3>
+            <p class="text-gray-600">Conéctate con comunidades locales, participa en sus costumbres y comparte su estilo de vida en los Andes y el Altiplano.</p>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+    <section id="destinos" class="mb-16 bg-white shadow rounded-xl p-6">
+      <h2 class="text-3xl font-bold text-blue-800 text-center mb-10">Destinos Populares del Perú</h2>
+      <div class="grid md:grid-cols-4 gap-6">
+    
+        <!-- Machu Picchu -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+          <img src="img/machu.jpg" alt="Machu Picchu" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-blue-700">Machu Picchu</h3>
+            <p class="text-sm text-gray-600 mb-2">Una de las 7 maravillas del mundo moderno. Ciudadela inca rodeada de montañas y misticismo.</p>
+            <div class="flex items-center gap-1 text-yellow-400">
+              ★★★★★
+              <span class="text-gray-500 text-sm ml-2">(4.9)</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Montaña de Colores -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+          <img src="img/rainbow.jpg" alt="Montaña de Colores" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-blue-700">Montaña de Colores</h3>
+            <p class="text-sm text-gray-600 mb-2">Impresionante formación natural con minerales que forman un arco iris sobre la montaña.</p>
+            <div class="flex items-center gap-1 text-yellow-400">
+              ★★★★☆
+              <span class="text-gray-500 text-sm ml-2">(4.7)</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Amazonas -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+          <img src="img/amazonas.jpg" alt="Amazonas" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-blue-700">Amazonas</h3>
+            <p class="text-sm text-gray-600 mb-2">Selva peruana rica en biodiversidad, cultura ancestral y aventura ecológica.</p>
+            <div class="flex items-center gap-1 text-yellow-400">
+              ★★★★☆
+              <span class="text-gray-500 text-sm ml-2">(4.6)</span>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Lago Titicaca -->
+        <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden">
+          <img src="img/lake-titicaca.jpg" alt="Lago Titicaca" class="h-48 w-full object-cover">
+          <div class="p-4">
+            <h3 class="text-lg font-semibold text-blue-700">Lago Titicaca</h3>
+            <p class="text-sm text-gray-600 mb-2">El lago navegable más alto del mundo, hogar de las islas flotantes de los Uros.</p>
+            <div class="flex items-center gap-1 text-yellow-400">
+              ★★★★☆
+              <span class="text-gray-500 text-sm ml-2">(4.5)</span>
+            </div>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    
+
+    <section id="fiestas" class="mb-16 bg-white shadow rounded-xl p-6">
+      <h2 class="text-3xl font-bold text-center text-blue-800 mb-10">Calendario de Fiestas Patronales en Cusco</h2>
+      <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">
+        Descubre las festividades más importantes que se celebran a lo largo del año en la ciudad del Cusco y sus alrededores.
+      </p>
+    
+      <div class="grid md:grid-cols-3 gap-6">
+    
+        <!-- Fiesta del Señor de los Temblores -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/Señor_de_los _temblores.jpg" alt="Señor de los Temblores" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-1">Señor de los Temblores</h3>
+            <p class="text-sm text-gray-500 mb-2">Marzo / Abril</p>
+            <p class="text-gray-600">Celebración religiosa más importante del Cusco. La imagen sale en procesión desde la Catedral con alfombras florales.</p>
+          </div>
+        </div>
+    
+        <!-- Inti Raymi -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/Inty_Raymi.jpg" alt="Inti Raymi" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-1">Inti Raymi</h3>
+            <p class="text-sm text-gray-500 mb-2">24 de Junio</p>
+            <p class="text-gray-600">Representación del ritual Incaico al dios Sol, realizado en Sacsayhuamán. Es uno de los eventos culturales más grandes del Perú.</p>
+          </div>
+        </div>
+    
+        <!-- Corpus Christi -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/Corpus-christi.jpg" alt="Corpus Christi" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-1">Corpus Christi</h3>
+            <p class="text-sm text-gray-500 mb-2">Junio</p>
+            <p class="text-gray-600">Procesión de 15 santos y vírgenes que bajan desde sus iglesias hacia la Plaza de Armas. Fusión de fe católica e identidad andina.</p>
+          </div>
+        </div>
+    
+        <!-- Santuranticuy -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/Santurantikuy.jpg" alt="Santuranticuy" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-1">Santuranticuy</h3>
+            <p class="text-sm text-gray-500 mb-2">24 de Diciembre</p>
+            <p class="text-gray-600">Feria tradicional en la Plaza de Armas donde artesanos cusqueños venden imágenes religiosas, nacimientos y artesanías navideñas.</p>
+          </div>
+        </div>
+    
+        <!-- Fiesta de la Virgen del Carmen (Paucartambo) -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/carmen.jpg" alt="Virgen del Carmen" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-1">Virgen del Carmen - Paucartambo</h3>
+            <p class="text-sm text-gray-500 mb-2">15-18 de Julio</p>
+            <p class="text-gray-600">Una de las fiestas más coloridas del Cusco con danzas tradicionales, máscaras, música y devoción. Declarada Patrimonio Cultural del Perú.</p>
+          </div>
+        </div>
+    
+        <!-- Fiesta de Todos los Santos -->
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition duration-300">
+          <img src="img/Corpus.jpg" alt="Todos los Santos" class="w-full h-52 object-cover">
+          <div class="p-5">
+            <h3 class="text-xl font-bold text-blue-700 mb-1">Todos los Santos</h3>
+            <p class="text-sm text-gray-500 mb-2">1 de Noviembre</p>
+            <p class="text-gray-600">Celebración tradicional con ofrendas a los difuntos, panes en forma de muñecos, y visita a los cementerios en todo Cusco.</p>
+          </div>
+        </div>
+    
+      </div>
+    </section>
+    <!-- Promociones -->
+<section id="promociones" class="mb-16 bg-yellow-50 p-6 rounded-xl shadow-lg">
+  <h2 class="text-3xl font-bold text-yellow-800 mb-6 text-center">🎉 Promociones de Viaje</h2>
+  <p class="text-center text-gray-700 mb-10 max-w-2xl mx-auto">
+    ¡Aprovecha nuestras increíbles promociones para grupos, estudiantes y viajes de promoción! Vive experiencias únicas al mejor precio, con servicios de calidad y guías especializados.
+  </p>
+  
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- Promo 1 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+      <img src="img/promo-escolar.jpg" alt="Viaje de Promoción Escolar" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg text-yellow-700 mb-2">Viaje de Promoción Escolar</h3>
+        <p class="text-sm text-gray-600">Incluye transporte, hospedaje, entradas, alimentación y fiesta de despedida. Ideal para estudiantes de secundaria. ¡Cupos limitados!</p>
+        <span class="block mt-2 text-yellow-600 font-bold">Desde $299</span>
+      </div>
+    </div>
+
+    <!-- Promo 2 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+      <img src="img/promo-familia.jpg" alt="Promo Familiar" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg text-yellow-700 mb-2">Paquete Familiar Cusco 4D/3N</h3>
+        <p class="text-sm text-gray-600">Tour familiar con visitas a Machu Picchu, Valle Sagrado y City Tour. Ideal para vacaciones en familia. Incluye guía privado.</p>
+        <span class="block mt-2 text-yellow-600 font-bold">Hasta 30% de descuento</span>
+      </div>
+    </div>
+
+    <!-- Promo 3 -->
+    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition">
+      <img src="img/promo-temporada.jpg" alt="Oferta Temporada Alta" class="w-full h-48 object-cover">
+      <div class="p-4">
+        <h3 class="font-semibold text-lg text-yellow-700 mb-2">Promo Temporada Alta</h3>
+        <p class="text-sm text-gray-600">Descuentos especiales por temporada. Reserva con anticipación y accede a beneficios exclusivos en tours y hospedaje.</p>
+        <span class="block mt-2 text-yellow-600 font-bold">Hasta 20% de descuento</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contacto -->
+<section id="contacto" class="relative bg-gradient-to-br from-blue-50 to-blue-100 py-16 px-6 rounded-xl shadow-2xl mb-16">
+  <div class="max-w-6xl mx-auto">
+    <h2 class="text-4xl font-bold text-center text-blue-900 mb-12">¿Tienes una consulta o deseas reservar?</h2>
+    
+    <div class="grid md:grid-cols-2 gap-10 items-center">
+      <!-- Información de contacto -->
+      <div class="space-y-6 text-gray-700">
+        <div class="flex items-center space-x-4">
+          <div class="text-blue-700 text-3xl">
+            <i class="fas fa-envelope animate-bounce"></i>
+          </div>
+          <div>
+            <h4 class="font-bold">Correo Electrónico</h4>
+            <p>reservas@perusafetravel.com</p>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="text-green-600 text-3xl">
+            <i class="fab fa-whatsapp animate-pulse"></i>
+          </div>
+          <div>
+            <h4 class="font-bold">WhatsApp</h4>
+            <p>+51 987 654 321</p>
+            <a href="https://wa.me/51987654321" target="_blank" class="text-sm text-blue-700 underline hover:text-blue-900">Chatear ahora</a>
+          </div>
+        </div>
+
+        <div class="flex items-center space-x-4">
+          <div class="text-red-500 text-3xl">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <h4 class="font-bold">Dirección</h4>
+            <p>Av. El Sol 123, Cusco - Perú</p>
+          </div>
+        </div>
+
+        <div class="mt-6">
+          <iframe
+            class="w-full h-52 rounded-lg shadow"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3879.3064984980992!2d-71.98136772415843!3d-13.516772671012061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dd6739cd7f175%3A0x27c9a9082fc6343!2sPlaza%20Mayor%20de%20Cuzco!5e0!3m2!1ses-419!2spe!4v1745425164694!5m2!1ses-419!2spe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Formulario de contacto -->
+      <div class="bg-white p-8 rounded-xl shadow-lg">
+        <h3 class="text-2xl font-semibold mb-6 text-blue-800">Escríbenos</h3>
+        <form class="space-y-4">
+          <div>
+            <label class="block mb-1 font-semibold">Nombre Completo</label>
+            <input type="text" placeholder="Tu nombre" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+          </div>
+          <div>
+            <label class="block mb-1 font-semibold">Correo Electrónico</label>
+            <input type="email" placeholder="ejemplo@correo.com" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300">
+          </div>
+          <div>
+            <label class="block mb-1 font-semibold">Mensaje</label>
+            <textarea rows="4" placeholder="¿En qué podemos ayudarte?" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="w-full bg-blue-700 text-white py-3 rounded-lg font-bold hover:bg-blue-800 transition">Enviar Mensaje</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="bg-blue-900 text-white text-center py-6">
+    <p>&copy; 2025 Peru Safe Travel - Todos los derechos reservados</p>
+  </footer>
+
+  <!-- Chatbot -->
+   <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/51967020305" target="_blank" id="boton-whatsapp" title="Chatea por WhatsApp">
+  🟢
+</a>
+
+  <!-- Botón flotante -->
+  <div id="boton-chat" onclick="toggleChat()">🤖</div>
+
+  <!-- Chat emergente -->
+  <div id="chat-container" class="oculto">
+    <div id="chat-header">
+      Asistente Virtual de Turismo
+      <span onclick="toggleChat()">✖</span>
+    </div>
+    <div id="chat-box"></div>
+    <input id="userInput" type="text" placeholder="¿A dónde quieres viajar?" />
+    <button onclick="enviarMensaje()">Enviar</button>
+  </div>
+  <!-- Scripts -->
+
+  <script src="chatbot.js"></script>
+
+</body>
+</html>
